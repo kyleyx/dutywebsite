@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  author: MyString
+  status: false
+  detail: MyString
+  computer_num: MyString
+  string: MyString
+
+two:
+  date: MyString
+  author: MyString
+  status: false
+  detail: MyString
+  computer_num: MyString
+  string: MyString

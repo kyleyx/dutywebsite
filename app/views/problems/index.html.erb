@@ -1,0 +1,23 @@
+<h1> Problem List </h1>
+<%= link_to 'Report a new problem', new_problem_path %>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Author</th>
+    <th>Computer Number</th>
+    <th>Description</th>
+    <th>Fixed</th>
+  </tr>
+  <% @problems.each do |p| %>
+    <tr>
+      <td><%= p.date %></td>
+      <td><%= p.author %></td>
+      <td><%= p.computer_num %></td>
+      <td><%= p.detail %></td>
+      <td><%= p.status %></td>
+      <td><%= link_to 'Show', problem_path(p) %></td>
+      <td><%= link_to 'Edit', edit_problem_path(p) %></td>
+      <td><%= link_to 'Delete', problem_path(p), method: :delete, data:{confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+</table>
